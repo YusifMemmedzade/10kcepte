@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azershops sizə pulsuz online mağaza açmağınıza və pul qazanmağınıza
+    kömək edir. Sən də bu gün pul qazanmağa başla">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/cabinet/cabinet-design.css">
+
+    <title>Herkese rubl kazandıran proje</title>
+
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+    
+                <div class="user-details">
+                    <div class="text-center">
+                        <img src="/img/logo/profile.png" alt="" class="img-circle">
+                    </div>
+                    <div class="user-info">                       
+                            <a href="#">asdasd123</a>
+                        
+                        <p class="text-muted m-0"><i class="far fa-dot-circle text-success" ></i> Online</p>
+                    </div>
+                    <br>
+                    <button type="button" class="btn_effect btn waves-effect btn-default btn-block" style="text-align: left;padding: 6px 10px;font-size: 13px;" data-toggle="tooltip" data-placement="top" data-original-title="Баланс на счету для покупок">
+                        <i class="far fa-arrow-alt-circle-left"></i> Alış-veriş için: <div class="balancelist">0.23 руб.</div>
+                    </button>
+                    <button type="button" class="btn_effect btn waves-effect btn-default btn-block" style="text-align: left;padding: 6px 10px;font-size: 13px;margin-top:5px;" data-toggle="tooltip" data-placement="top" data-original-title="Ваш баланс на счету для выплат">
+                        <i class="far fa-arrow-alt-circle-right"></i> Para çekme için: <div class="balancelist">5.26 руб.</div>
+                    </button>
+
+                </div>
+                <div id="sidebar-menu">
+                    <ul>
+                        <li><hr style="margin: 0.5rem 0rem 0.5rem 0rem;"></li>
+                        <li><a href="/cabinet/cabinet.html" class="waves-effect a_active"><i class="fa fa-user-circle"></i><span> Benim ofisim </span></a></li>
+                        <li><a href="/cabinet/garage.html" class="waves-effect"><i class="fa fa-car"></i><span> Otopark <span class="badge badge-default pull-right" data-toggle="tooltip" data-placement="left" data-original-title="Кол-во машин в вашем автопарке">1</span></span></a></li>
+                        
+                        <li><hr style="margin: 0.5rem 0rem 0.5rem 0rem;"></li>
+                        <li><a href="/cabinet/deposit.html" class="waves-effect"><i class="fa fa-plus-square"></i><span> Bakiye artırma <span class="badge badge-default pull-right" data-toggle="tooltip" data-placement="left" data-original-title="Акция на пополнение">+10%</span></span></a></li>
+                        <li><a href="/cabinet/withdraw.html" class="waves-effect"><i class="fa fa-minus-square"></i><span> Para çekme </span></a></li>
+                        <li><hr style="margin: 0.5rem 0rem 0.5rem 0rem;"></li>
+                        
+                        <li><a href="/cabinet/referral.html" class="waves-effect"><i class="far fa-handshake"></i><span> Ortaklıg programı </span></a></li>
+                        <li><a href="/cabinet/referral-list.html" class="waves-effect"><i class="fa fa-users"></i><span> Referal listesi <span class="badge badge-default pull-right" data-toggle="tooltip" data-placement="left" data-original-title="Кол-во ваших рефералов">0</span></span></a></li>
+                        
+                        <li><hr style="margin: 0.5rem 0rem 0.5rem 0rem;"></li>
+                        
+                        <li><a href="/cabinet/bonus.html" class="waves-effect"><i class="fa fa-gift"></i><span> Günlük bonus </span></a></li>
+                        <li><a href="/payments.html" class="waves-effect"><i class="fas fa-chart-area"></i><span> Ödemeler </span></a></li>
+                        
+                        
+                       
+                    </ul>
+                </div>
+                
+            </div> 
+        </div>
+
+    </div>
+      
+    <div id="main" class="d-flex align-items-center" style="margin-left: 200px;">
+      <button class="openbtn ms-5 sol" onclick="openNav()"><i class="fas fa-bars"></i></button>  
+      <div class="btn-group topbtngroup ms-auto d-none d-xl-flex">
+          <a href="/home.html" class="topbtnlist waves-effect  button ">Anasayfa</a>
+          <a href="/project.html"><span class="topbtnlist waves-effect button">Proje</span></a>
+          <a href="/guarantee.html"><span class="topbtnlist waves-effect button">Garanti</span></a>
+          <a href="/payments.html"><span class="topbtnlist waves-effect button">Ödemeler</span></a>
+          <a href="/contact.html"><span class="topbtnlist waves-effect button">İletişim</span></a>
+      </div>
+    </div>
+      
+      <div class="content-page">
+        <div class="content">
+
+<div class="">
+<div class="page-header-title">
+<h4 class="page-title">Benim ofisim</h4>
+</div>
+</div>
+<style>
+/*body{background:#f3f2f0 !important;}*/
+.insert_box{padding: 10px;border-radius: 10px;-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.14);-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.14);box-shadow: 0 1px 2px 0 rgba(0,0,0,.14);}
+.insert_new_btn {
+color: #fff;
+font-weight: 700;
+border: none;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+border-top-left-radius: 50px;
+outline: none;
+-webkit-transition: 333ms ease-in-out;
+transition: 333ms ease-in-out;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+padding: 10px 38px 10px;
+margin-top:10px;
+font-size: 15px;
+letter-spacing:1px;
+background-color: #5cb45b;
+/* -webkit-box-shadow: 0 10px 15px 0 rgba(255,140,0,.2);*/
+/*box-shadow: 0 7px 15px 0 rgba(255,140,0,.2);*/
+}
+.insert_new_btn:hover{color:#fff;-webkit-transition:133ms ease-in-out;transition:133ms;box-shadow:0 7px 30px 0 rgba(255,140,0,.4);}
+.insert_new_input{border-radius: 50px;letter-spacing: 1px;text-align: center;background-color: #fdfdfd;height: 41px;font-size: 13px;}
+.insert_new_input:focus::-webkit-input-placeholder {color: transparent}
+.insert_new_input:focus::-moz-placeholder          {color: transparent}
+.insert_new_input:focus:-moz-placeholder           {color: transparent}
+.insert_new_input:focus:-ms-input-placeholder      {color: transparent}
+.balancei_pscount{height:25px;color:#7f7f7f;}
+.insert_new_btn:active{color:#fff !important;}
+.insert_new_btn:focus{color:#fff !important;}
+@media (min-width: 1200px) and (max-width: 1470px) {
+.insert_new_input{font-size: 10px;}
+.insert_new_btn{font-size: 13px;padding: 10px 0px 10px;}
+.balancei_pscount{display:none;}
+}
+</style>
+
+
+<div class="page-content-wrapper ">
+
+<div class="container">
+
+<div class="row">
+<div class="col-sm-6 col-lg-3">
+<div class="panel text-center">
+  <div class="panel-heading">
+    <h4 class="panel-title text-muted font-light profilemsz">Kazanma hızı</h4>
+  </div>
+  <div class="panel-body p-t-10">
+    <h2 class="m-t-0 m-b-15 profilemst"><i class="fas fa-tachometer-alt text-danger m-r-10"></i><b>0.0930₽ / saat</b></h2>
+
+
+
+    </div>
+  
+</div>
+</div>
+
+
+<div class="col-sm-6 col-lg-3">
+<div class="panel text-center">
+  <div class="panel-heading">
+    <h4 class="panel-title text-muted font-light profilemsz">Referal sayısı</h4>
+  </div>
+  <div class="panel-body p-t-10">
+    <h2 class="m-t-0 m-b-15 profilemst"><i class="fas fa-user-friends text-success m-r-10"></i><b>0 kişi</b></h2>
+    <!--<p class="text-muted m-b-0 m-t-20"><mark class="profilemsd">Больше чем у <b>0%</b> пользователей</mark></p>-->
+
+  </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+<div class="panel text-center">
+  <div class="panel-heading">
+    <h4 class="panel-title text-muted font-light profilemsz">Çekilen para</h4>
+  </div>
+  <div class="panel-body p-t-10">
+    <h2 class="m-t-0 m-b-15 profilemst"><i class="fas fa-wallet text-success m-r-10" ></i><b>0.00₽</b></h2>
+    <!--<p class="text-muted m-b-0 m-t-20"><mark class="profilemsd">Больше чем у <b>0%</b> пользователей</mark></p>-->
+  </div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-lg-3">
+  <div class="panel text-center">
+    <div class="panel-heading">
+      <h4 class="panel-title text-muted font-light profilemsz">Referal geliri</h4>
+    </div>
+    <div class="panel-body p-t-10">
+      <h2 class="m-t-0 m-b-15 profilemst"><i class="fas fa-money-bill text-success m-r-10"></i><b>0.00₽</b></h2>
+      <!--<p class="text-muted m-b-0 m-t-20"><mark class="profilemsd">Больше чем у <b>0%</b> пользователей</mark></p>-->
+    </div>
+  </div>
+  </div>
+  
+</div>
+<!-- end row -->
+
+<div class="row">
+<div class="col-sm-6 col-lg-4">
+<div class="panel panel-default" >
+  <div class="panel-heading" style="
+background-color: rgba(255, 255, 255, 0.7);
+"><h3 class="panel-title">Hesap bilgileri</h3></div>
+  <div class="panel-body">
+    <h5 class="profileinfoh5">Login: <span>asdasd123</span></h5>
+    <h5 class="profileinfoh5">E-mail: <span class="profileinfospan">myuska014@mail.ru</span></h5>
+    <h5 class="profileinfoh5">Sistem ID: <span>#6741</span></h5>
+    <h5 class="profileinfoh5">Davet eden: <span>skfsmkm21</span></h5>
+    <h5 class="profileinfoh5">Proje çalışıyor: <span>4 gün</span></h5>
+  
+<button type="submit"  class="btn waves-effect btn-primary btn-block calc_btn"><i class="fa fa-cog"></i> <a href="/settings">  <font color="#fffff"> Hesap ayarları</font></a></button>
+    
+ 
+                
+  </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4">
+<div class="panel panel-default">
+  <div class="panel-heading" style="
+background-color: rgba(255, 255, 255, 0.7);
+"><h3 class="panel-title">Hesap istatistikleri</h3></div>
+  <div class="panel-body">
+    <h5 class="profileinfoh5">Yüklenen para: <span>0.00₽</span></h5>
+    <h5 class="profileinfoh5">Ödenen para: <span>0.00₽</span></h5>
+    <h5 class="profileinfoh5">Referal geliri: <span>0.00₽</span></h5>
+    <h5 class="profileinfoh5">Referal sayısı: <span>0</span></h5>
+    <h5 class="profileinfoh5">Arabalar: <span>1 adet</span></h5>
+
+    
+     <button type="submit"  class="btn waves-effect btn-primary btn-block calc_btn"><i class="fas fa-cart-plus"></i> <a href="/park">  <font color="#fffff"> Araba satın al</font></a></button>
+  
+
+  
+ 
+
+
+
+
+</div>
+</div>
+</div>
+
+    
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<!-- end row -->
+
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-primary">
+  <div class="panel-body">
+    <h4 class="m-t-0">Satın alınan arabalar</h4>
+    <div class="row">
+
+    
+      <div class="col-4 col-md-2 col-lg-2 col-xl-1">
+        <img src="/img/cars/n3.png" class="profilecarimg">
+      </div>  
+
+    
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+ <!-- content -->
+
+ <footer class="footer">
+    © 2018 RublKAZAN - All Rights Reserved.
+ </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+                     
+                        
+                   
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 

@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: default;
+}
+
+@media only screen and (min-width: 1400px) {
+    #nav-logo{
+        width: 70%;
+    }
+    
+}
+/* HERE NAVBAR EFFECTS START ---------------------------------------*/
+
+.underline{
+    position: relative;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffea00;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+.you_link{
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+}
+.you_link:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/* HERE NAVBAR EFFECTS END ------------------------------------------*/
+
+ul{
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 992px){
+    .numbers__list-item:after {
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(transparent 75%, #0f3960 0) 50%/100% 8px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .numbers__list-item:first-child:after {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 767px)
+{
+    .numbers {
+        padding: 45px 0;
+    }
+}
+
+.numbers{
+    display: block;
+    padding: 0;
+    color: #fff;
+    background: #001a33 url(./img/background/pattern-blue.jpg) 0 0;
+}
+
+
+.numbers__list-item::after {
+    position: absolute;
+    top: 0;
+    right: 17%;
+    left: 17%;
+    height: 2px;
+    content: '';
+    background: linear-gradient(90deg, transparent 75%, #0f3960 0) 50%/8px;
+}
+
+.numbers__list-item h3{
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #ffea00;
+}
+
+.numbers__list-item{
+    position: relative;
+    padding: 41px 15px;
+    text-align: center;
+}
+
+.numbers__list-item p{
+    font-size: 15px;
+    line-height: 1.73334;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+/* P AFTER BORDER  */
+.numbers__desc:after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    margin-left: -15px;
+    content: '';
+    background-color: #ffea00;
+}
+
+/* ABOUT SECTION CSS STARTS HERE -------------------*/
+@media only screen and (min-width: 1170px){
+    .about__body {
+        padding: 65px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .about__body {
+        top: -5px;
+        margin-left: -42px;
+        padding: 65px 40px;
+    }
+}
+
+@media only screen and (min-width: 767px){
+    .about__body:before {
+        transform: skewY(-1deg);
+        background-position: 100% 101%;
+    }
+}
+.about__body {
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 40px 15px 20px;
+}
+.about__body:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: #fff url(../images/bg-about-tex1t.png) 230% 101% no-repeat;
+    background-size: 257px 167px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
+}
+.about__body-inner {
+    position: relative;
+    z-index: 1;
+}
+.title {
+    font-weight: 400;
+    line-height: 1.36;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+}
+.title, .title-page {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.title__mark {
+    font-weight: 700;
+}
+.about__body p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #617e9a;
+}
+.btn {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    height: 48px;
+    padding: 0 33px;
+    transition: 0.5s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #02050a;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffea00;
+    box-shadow: inset 0 -2px 0 #ffd200;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.about__btn {
+    margin-top: 16px;
+}
+.discount {
+    display: block;
+    padding-top: 35%;
+}
+.discount__title, .discount__title.discount__title {
+    margin-bottom: 20px;
+}
+.discount .title__mark {
+    color: #fff;
+}
+.discount__title {
+    display: inline-block;
+    max-width: 79%;
+    padding: 14px 19px;
+    color: #ffea00;
+    background-color: rgba(0, 19, 37, .9);
+}
+.discount__body {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 18px 22px 23px;
+    color: #fff;
+    font-size: 16px;
+}
+.discount__body:before {
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: 0;
+    left: 0;
+    height: 100%;
+    padding-bottom: 10px;
+    content: '';
+    transform: skewY(-1deg);
+    background-color: rgba(0, 19, 37, .9);
+}
+.discount__desc {
+    line-height: 1.75;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+/* ABOUT SECTION IMAGE HERE */
+.about {
+    display: block;
+    padding: 0 0 95px;
+    background: url(./img/background/bg-about.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+/* ABOUT SECTION CSS ENDS HERE --------------------*/
+
+/* FEATURE SECTION CSS START HERE ------------------*/
+
+@media only screen and (min-width: 992px){
+    .feature__list {
+        border-top: 1px solid #e6ebf1;
+    }
+}
+.feature__item:nth-child(odd) {
+    background-color: #f9fafb;
+}
+@media only screen and (min-width: 992px){
+    .feature__item {
+        display: table-cell;
+        float: none;
+        margin: 0;
+        border-left: 1px solid #e6ebf1;
+    }    
+}
+.feature__item {
+    min-height: 290px;
+    padding: 70px 15px;
+    text-align: center;
+}
+.feature__icon {
+    line-height: 44px;
+    position: relative;
+    width: 65px;
+    height: 44px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.feature__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.42857;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+    color: #001a33;
+}
+.feature__desc {
+    font-size: 15px;
+    line-height: 1.73334;
+    color: #5881a9;
+    letter-spacing: 1px;
+}
+
+/* BEST SECTION STARTS HERE ----------------------------- */
+
+@media only screen and (min-width: 767px){
+    .best {
+        padding-top: 86px;
+        padding-bottom: 130px;
+    }
+}
+@media only screen and (min-width: 767px){
+    .best__item {
+        margin-bottom: 0;
+    }
+}
+
+.best {
+    display: block;
+    padding: 40px 0 20px;
+    color: #fff;
+    background: #001a33 url(./img/background/pattern-blue.jpg) 0 0;
+}
+.best .title__mark {
+    color: #ffea00;
+}
+.title__mark {
+    font-weight: 700;
+}
+.best__item.best__item {
+    padding-left: 80px;
+}
+.best__item-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.best__item-desc {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.73334;
+    margin-bottom: 20px;
+    color: #5881a9;
+}
+.featuresico {
+    
+    top: 0;
+    left: 5px;
+    width: 55px;
+    height: 55px;
+}
+
+/* BEST SECTION CSS ENDS HERE --------------------------------*/
+#q_a{
+    height: 50vh;
+}
+/* FOOTER STARTS HERE --------------------------------*/
+#_footer {
+    font-size: 1rem;
+    display: block;
+    color: #5881a9;
+    background-color: #041e37;
+    height: 20vh;
+}
+@media screen and (max-width: 576px) {
+   #_footer{
+       height: 28vh !important;
+   } 
+   #q_a{
+       height: 67vh;
+   }
+   body{
+       overflow-x: hidden;
+   }
+}
+#_footer p{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .you_1{
+        display: none !important;
+    }
+    
+}
+
+/*----------------------------------------------------PROJE SECTION START HERE------------------------------------------------------------------------------ */
+
+    #anasayfa:hover{
+        border-bottom: #5881a9 1px solid;
+    }
+
+    .categoryes__item {
+        font-size: 15px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .categoryes__fig {
+        font-size: 0;
+        overflow: auto;
+        border-radius: 2px;
+    }
+    .categoryes__name {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: #001a33;
+    }
+    .categoryes__desc {
+        line-height: 2;
+        margin-bottom: 18px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    @media only screen and (min-width: 767px){
+        .categoryes__item:nth-child(even) {
+            text-align: right;
+        }
+    }
+
+    /*----- CATEGORY ARE HERE -----*/
+
+@media only screen and (min-width: 1170px){
+    .course {
+            padding: 112px 0 120px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .course {
+        padding: 70px 0;
+    }
+}
+
+
+.course_theme_light {
+    background-color: #f5f9fc;
+}
+.course {
+    position: relative;
+    z-index: 2;
+    padding: 41px 0;
+    background-size: cover;
+}
+.course, .course-dop, .course-ext {
+    display: block;
+}
+.title+.desc {
+    margin-top: -16px;
+}
+.desc {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    line-height: 2.125;
+    margin-bottom: 40px;
+    color: #8da4bb;
+}
+.course__list-item {
+    margin-bottom: 30px;
+}
+.course_theme_light .course__item {
+    box-shadow: 0 1px 3px #bbd0f6;
+}
+.course__item {
+    position: relative;
+    height: 338px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #000c14;
+}
+.course__topname {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    color: #5b6f7e;
+    text-shadow: 1px 1px 0 #ffffff;
+    background-color: #f3f7fa;
+    border-bottom: 1px solid #e6eff5;
+    box-shadow: inset 0 1px 3px rgba(220, 233, 243, .83);
+}
+.course__item-name {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.71429;
+    letter-spacing: 1px;
+    display: block;
+    text-transform: uppercase;
+    color: #001a33;
+}
+.course__item-head {
+    line-height: 104px;
+    height: 150px;
+    text-align: center;
+}
+.course__price {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 24px 23px 22px;
+    color: #5b6f7e;
+    background-color: #f3f7fa;
+    box-shadow: inset 0 1px 3px rgba(220, 233, 243, .83);
+}
+.course__price-item {
+    position: relative;
+    margin-bottom: 22px;
+}
+.course__price-item:before {
+    position: absolute;
+    top: 6px;
+    right: 30%;
+    left: 30%;
+    content: '';
+    border-top: 1px dashed #cadce3;
+}
+.course__price-kind {
+    float: left;
+}
+.course__price-value {
+    float: right;
+}
+.course__price-item:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+@media only screen and (min-width: 767px){
+    .course__list {
+        margin-bottom: 0;
+    }
+}
+
+
+.course__list {
+    margin-bottom: -30px;
+}
+
+
+/*----------------------------------------------------PROJE SECTION ENDS HERE------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------[ GARANTI ] SECTION START HERE------------------------------------------------------------------------------- */
+
+.categoryes__fig {
+    font-size: 0;
+    overflow: auto;
+    border-radius: 2px;
+}
+.decs-color{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#8da4bb;
+}
+
+
+/*----------------------------------------------------[ GARANTI ] SECTION ENDS HERE-------------------------------------------------------------------------------- */
+
+
+
+
+
+/*----------------------------------------------------[ İLETİSİM ] SECTION STARTS HERE-------------------------------------------------------------------------------- */
+
+.content {
+    display: block;
+    padding-top: 50px;
+}
+.address__data {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 100;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 10px #fff, inset 0 0 0 11px #c7dcef, 0 1px 59px rgba(0, 26, 51, .2);
+}
+.address__data-item {
+    padding-top: 38px;
+    padding-bottom: 40px;
+    color: #02050a;
+}
+.address__data-value-name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.address__data-value {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.iletisim{
+      color: #5987d2;
+      text-decoration: none;
+}
+.address__mail {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-right: -4px;
+    margin-left: -4px;
+    padding: 25px 25px 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #68839e;
+    text-shadow: 1px 1px 1px #fff;
+    background-color: #f3f7fb;
+}
+/* PAYMENTS SECTION STARTS HERE --------------------------------------------------------------------*/
+
+.popup_protect__def__img {
+    float: left;
+    margin-right: 19px;
+    margin-top: 20px;
+}
+.card__head {
+    position: relative;
+    padding: 25px;
+}
+.card__name, .card__period {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__name {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.card__period {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color: #98b5c7;
+}
+.card__period:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    background-image: url();
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    margin-right: 7px;
+}
+.bordered {
+    border: solid #edf6ff 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+    text-shadow: 1px 1px #f5f9fc;
+}
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+.bordered th {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #dce9f9;
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.bordered td, .bordered th {
+    border-left: 1px solid #f7f7f7;
+    border-top: 1px solid #f7f7f7;
+    padding: 15px;
+    text-align: center;
+}
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------[ İLETİSİM ] SECTION ENDS HERE-------------------------------------------------------------------------------- */
